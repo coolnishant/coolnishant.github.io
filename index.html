@@ -351,7 +351,7 @@
 								<span class="help-block with-errors"></span>
 							</div>
 							<div class="submit-container">
-								<button type="submit" name = "button_pressed"class="btn submit-btn">Send Your Message</button>
+								<button type="submit" name = "button_pressed"class="btn submit-btn" >Send Your Message</button>
 							</div>
 							<p class="form-response"></p>
 						</form> <!-- End Form -->
@@ -361,11 +361,11 @@
 			</div>
 	<?php
 
-if(isset($_POST['button_pressed']))
+if(isset($_GET['button_pressed']))
 {
-    $name = $_POST['name'];
-    $message = $_POST['message'];
-    $email = $_POST['email'];
+    $name = $_GET['name'];
+    $message = $_GET['message'];
+    $email = $_GET['email'];
     $to      = 'nishant2raj@gmail.com';
     $subject = 'Contact On Portfolio:'.$name;
     $headers = 'From: '.$name. "\r\n" .
