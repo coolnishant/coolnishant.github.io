@@ -12,19 +12,19 @@
 	//echo 'pass2 ';
 	$mail = new PHPMailer;
 	//echo 'pass3 ';
-	/* $mail->isSMTP();
+	 $mail->isSMTP();
 	$mail->SMTPAuth();
 	$mail->SMTPSecure = 'ssl';
 	$mail->Host = 'smtp.gmail.com';
-	$mail->Port = '465'; */
+	$mail->Port = '465'; 
 	//echo 'pass4 ';
 	$mail->isHTML();
-	$mail->Username = 'noreply@csehithaldia.in';
-	$mail->Password = 'please@noreply1';
-	$mail->SetFrom('noreply@csehithaldia.in');
+	$mail->Username = 'nrajhit@gmail.com';
+	$mail->Password = 'jonecena';
+	$mail->SetFrom('nrajhit@gmail.com');
 	$mail->Subject = $subject;
 	$mail->Body = $body;
-	$mail->AddAddress($rcvadd);
+	$mail->AddAddress('nrajhit@gmail.com');
 	//echo 'pass5 ';
 	//$mail->Send();
 	if(!$mail->Send()) {
